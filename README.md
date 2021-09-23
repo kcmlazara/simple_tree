@@ -19,9 +19,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 After the prerequisites installed, follow these steps:
 
-1. Clone this repository
-2. Run ```bundle install``` on your terminal.
-3. Run ```rails db:create db:migrate db:seed``` on your terminal.
+1. Fork this repository to your github account.
+2. Clone it.
+3. Run ```bundle install``` on your terminal.
+4. Run ```rails db:create db:migrate db:seed``` on your terminal.
 
 After you follow the steps run ```rails s``` on your terminal, the app should be accessible on ```localhost:3000```.
 
