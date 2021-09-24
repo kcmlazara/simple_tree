@@ -1,0 +1,22 @@
+<!-- <h1>UserLinks#index</h1>
+<p>Find me in app/views/user_links/index.html.erb</p> -->
+
+
+<p> All your Links will display here </p>
+<hr>
+<%= link_to "Add New", new_user_link_path%>
+<br>
+<br>
+<table>
+        <tr>
+            <th>URL</th>
+        </tr>
+  <% @user_links.each do |user_link|%>
+        <tr>
+            <td style="width:60%"><%= link_to user_link.name, user_link.name%></td>
+            <td style="width:10%"><%= link_to "Update", edit_user_link_path(user_link)  %></td>
+            <td style="width:10%"><%= link_to 'Remove', user_link_path(user_link), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+  <% end %>
+</table>
+

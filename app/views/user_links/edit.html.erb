@@ -1,0 +1,8 @@
+<!-- <h1>UserLinks#edit</h1>
+<p>Find me in app/views/user_links/edit.html.erb</p> -->
+
+<h3>Update URL</h3>
+<%= form_with model: @user_link do |form| %>
+  <%= form.text_field :name, placeholder: "URL" %>
+  <%= form.submit %>
+<% end %>

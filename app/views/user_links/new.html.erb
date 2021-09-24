@@ -1,0 +1,9 @@
+<!--<h1>UserLinks#new</h1>
+<p>Find me in app/views/user_links/new.html.erb</p>-->
+
+<h3>Add URL</h3>
+<%= form_with model: @user_link do |form| %>
+  <%= form.text_field :name, placeholder: "URL" %>
+  <%= form.hidden_field :user_id, value:current_user.id%>
+  <%= form.submit %>
+<% end %>
